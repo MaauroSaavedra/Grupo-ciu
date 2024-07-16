@@ -1,68 +1,196 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  background-color: #FFF1D0;
+  margin: auto;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+h1{
+  text-align: center;
+  font-size: 64px;
+  margin: 24px;
+  padding-top: 8px;
+  color: bisque;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+header{
+  background-color: #916953;
+  padding: 32px;
 }
 
-button {
+nav{
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.main-ul{
+  display: inline-block;
+  text-align: center;
+}
+
+.main-ul li{
+  margin: 0 auto;
+  display: block;
+  float: left;
+  padding: 0 16px;
+  text-align: 0;
+}
+
+a{
+  text-decoration: none;
+  color: bisque;
+}
+
+article{
+  padding: 32px 128px;
+}
+
+h3{
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+section{
+  font-size: 20px;
+  color: bisque;
+  text-align: justify;
+  font-family: monospace;
+  background-color: #2A2B2A;
+  padding: 10px 30px;
+  margin: 32px 64px;
+  border-radius: 16px;
+}
+
+#fotos{
+  display: inline-block;
+  align-items: center;
+  margin: 32px 64px;
+}
+
+.img-inicio{
+  display: block;
+  float: left;
+  padding: 1% 2%;
+}
+
+img{
+  width: 46%;
+  margin: 0 auto;
+  border-radius: 70px;
+  
+}
+
+.video{
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  height: 512px;
+  width: 80%;
+  padding: 0 10%;
+}
+
+#direccion{
+  display: inline-block;
+}
+
+footer{
+  text-align: center;
+  color: bisque;
+  background-color: #916953;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  padding-top: 2px;
+}
+
+h2{
+  text-align: center;
+  font-size: 6em; 
+  margin-bottom: 1.5em; 
+}
+
+#menu{
+  background-color: #916953;
+}
+
+#menu-box{
+  margin: 2em 4em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.h3-menu{
+  text-align: left;
+}
+
+#ul-menu{
+  border: #2A2B2A solid;
+  background-color: #FFF1D0;
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  margin: 0 6em;
+  padding-bottom: 1em;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+#ul-menu ul li{
+  line-height:300%
+}
+
+ol{
+  line-height:400%  
+}
+
+.menu-title{
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.menu-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 6em;
+}
+
+span{
+  font-weight: bold;
+}
+
+h4{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  font-size: 80px;
+  margin: 1em 0;
+}
+
+form{
+  font-family: 'Courier New', Courier, monospace;
+  display: inline-block;
+  align-content: center;
+  margin: 0 35% 4em 35%;
+  border: #2A2B2A solid;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+
+
+.form-section{
+  margin: 0 auto;
+  display: block;
+  float: left;
+  padding: 0 16px;
+  text-align: 0;
+}
+
+.form-section div{
+  margin: 16px 0;
+}
+
+.audio {
+  position: sticky;
+  bottom: 0px;
+  padding: 10px 0px;
+}
+
+table{
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 45%;
 }
