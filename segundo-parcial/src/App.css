@@ -236,8 +236,6 @@ h3{
   margin: -20px; 
 }
 
-
-/* aca te lo encerre porque me cagaba todo a mi este al tener la ubicacion iframe */
 #videoYoutube{
     padding: 20px;
     padding-left: 40px;
@@ -246,10 +244,51 @@ h3{
     width: 90%;
     height: 100%;
 }
-
-/* .video{
-  width: max-content;
+.flex-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content:space-between;
+  
+}
+.flex-container > section {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+.box01{
+  width: 90%;
+  
+  display: flex;
+  align-items: flex-start;
+}
+.box02{
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
+}
+.flex-container-column{
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.imagenBloque{
+  width: 10%;
+  padding: 10px;
+  
+}
+.tit{
+  width: 100%;
   height: max-content;
-} 
-  fijate que onda esto
-  */
+  font-size:xx-large;
+  margin: auto;
+}
+.etiquetas:hover{
+  background-color:#2A2B2A;
+  border-radius: 20px;
+}
+#nosotros{
+  background-color: #2A2B2A;
+}

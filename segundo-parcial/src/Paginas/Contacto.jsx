@@ -3,22 +3,23 @@ const estiloLogo = {
    height: '100%',
    padding :'0 50%',
    margin: '0 auto',
-   width: '100px'
+   width: '15%'
 }
 const estiloMapa = {
     border : '0',
-    borderRadius : '10px'
+    borderRadius : '10px',
+    width: '30%'
 }
 
 const estiloBotonA = {
-    width: '100px',
-    height: '20px',
+    width: '30%',
+    height: '15%',
     backgroundColor: 'bisque',
 }
 
 const estiloConsulta = {
-    width: '100px',
-    height: '50px',
+    width: '30%',
+    height: '15%',
     backgroundColor: 'bisque',
 }
 const Contacto = () => {
@@ -65,8 +66,10 @@ const Contacto = () => {
                 <td>
                     <form>
                         <label>Consultas:</label>
-                        <textarea required style={estiloConsulta}></textarea>
+                        <div className="flex-container-column">
+                            <textarea required style={estiloConsulta}></textarea>
                         <button type="submit" style={estiloBotonA} >Enviar</button>
+                        </div>
                     </form>
                     <br />
                 </td>
