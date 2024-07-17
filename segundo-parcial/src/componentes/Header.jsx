@@ -6,9 +6,9 @@ export default function Header(){
                 <h1>El Rincón del Aroma</h1>
                 <nav>
                     <ul className="main-ul">
-                        <li><a href="./menu.html">Menu</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
-                        <li><a href="#ubicacion">Ubicacion</a></li>
+                        <li class="liMenu"><a href="./menu.html">Menu</a></li>
+                        <li class="liMenu"><a href="./contacto.html">Contacto</a></li>
+                        <li class="liMenu"><a href="#ubicacion">Ubicacion</a></li>
                     </ul>
                 </nav>
             </div>  

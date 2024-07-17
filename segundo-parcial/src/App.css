@@ -197,10 +197,22 @@ h3{
   width: 90%;
   margin: auto;
 }
-#video{
-  width: 90%;
-  margin: auto;
-}
 iframe{
-  width: 100%;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color:#916953;
+  width: 90%;
+  height: 100%;
+}
+.video{
+  width: max-content;
+  height: max-content;
+}
+.imagenesSectores:hover{
+  filter: blur(1px);
+}
+.liMenu:hover{
+  background-color:#2A2B2A;
+  border-radius: 20px;
 }

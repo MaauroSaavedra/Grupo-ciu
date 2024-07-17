@@ -28,7 +28,7 @@ export default function MainContent(){
                 <li> <u>Eventos Especiales</u>: Organizamos eventos temáticos y noches de música en vivo en la terraza, añadiendo un toque especial a tu experiencia.</li>
             </ul>
 
-            <h5>Precionando la imagen vera un video ilustrativo sobre nuestra terraza </h5>
+            <h5>Presionando la imagen vera un video ilustrativo sobre nuestra terraza </h5>
         </div>
         </div>
 
