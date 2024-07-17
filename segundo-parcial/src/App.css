@@ -5,7 +5,7 @@ body{
 
 h1{
   text-align: center;
-  font-size: 642px;
+  font-size: 64px;
   margin: 24px;
   padding-top: 8px;
   color: bisque;
@@ -22,6 +22,8 @@ nav{
   font-size: 20px;
   font-family: 'Courier New', Courier, monospace;
 }
+
+
 
 .main-ul{
   display: inline-block;
@@ -51,41 +53,10 @@ h3{
   text-align: center;
 }
 
-section{
-  font-size: 20px;
-  color: bisque;
-  text-align: justify;
-  font-family: monospace;
-  background-color: #2A2B2A;
-  padding: 10px 30px;
-  margin: 32px 64px;
-  border-radius: 16px;
-}
-
-#fotos{
-  display: inline-block;
-  align-items: center;
-  margin: 32px 64px;
-}
-
 .img-inicio{
   display: block;
   float: left;
   padding: 1% 2%;
-}
-
-
-.video{
-  display: inline-block;
-  text-align: center;
-  margin: auto;
-  height: 512px;
-  width: 80%;
-  padding: 0 10%;
-}
-
-#direccion{
-  display: inline-block;
 }
 
 footer{
@@ -94,6 +65,15 @@ footer{
   background-color: #916953;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
   padding-top: 2px;
+}
+
+.video{
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  height: 512px;
+  width: 80%;
+  padding: 0 10%;
 }
 
 h2{
@@ -155,40 +135,45 @@ h4{
   margin: 1em 0;
 }
 
-form{
-  font-family: 'Courier New', Courier, monospace;
+footer p{
+  display: inline;
+  margin: 5%;
+}
+
+
+  section{
+    font-size: 20px;
+    color: bisque;
+    text-align: justify;
+    font-family: monospace;
+    background-color: #2A2B2A;
+    padding: 2%;
+    margin: 1%;
+    border-radius: 16px;
+  }
+
+.headerBloque{
   display: inline-block;
-  align-content: center;
-  margin: 0 35% 4em 35%;
-  border: #2A2B2A solid;
-  border-radius: 20px;
-  padding: 30px;
+  padding-left: 10%;
+}
+
+.imagenBloque {
+  padding-left: 10%;
+  width: 12%;
+}
+
+.imagenTextoSectores{
+  display: flex;
+  margin: 2% 1%;
+  height: 480px;
+}
+
+.imagenesSectores {
+  width: 550px;
+  height: 480px;
 }
 
 
-
-.form-section{
-  margin: 0 auto;
-  display: block;
-  float: left;
-  padding: 0 16px;
-  text-align: 0;
-}
-
-.form-section div{
-  margin: 16px 0;
-}
-
-.audio {
-  position: sticky;
-  bottom: 0px;
-  padding: 10px 0px;
-}
-
-table{
-  font-family: 'Courier New', Courier, monospace;
-  margin-left: 45%;
-}
 p{
   width: 90%;
   margin: auto;
@@ -197,22 +182,74 @@ h3{
   width: 90%;
   margin: auto;
 }
-iframe{
-  padding: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-  background-color:#916953;
-  width: 90%;
-  height: 100%;
-}
-.video{
-  width: max-content;
-  height: max-content;
-}
+
 .imagenesSectores:hover{
   filter: blur(1px);
 }
+
 .liMenu:hover{
   background-color:#2A2B2A;
   border-radius: 20px;
 }
+
+.textoSectores {
+  background-color: #916953;
+  color: bisque;
+  max-width: 80%;
+  padding-top: 2%;
+  padding-left: 2%;
+}
+
+.textoSectores p {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 120%;
+  margin-right: 10px;
+}
+
+.textoSectores li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 120%;
+  margin-right: 20px;
+}
+
+.textoSectores h5  {
+  text-align: right;
+  margin-right: 20px;
+}
+
+#informacionLugar{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #916953;
+  font-size: 20px;
+  display: inline-block; 
+  float: right;
+  height: 100%;
+}
+
+#ubicacion{
+  color: bisque;
+  text-align: center;
+  font-family: monospace;
+  border-radius: 16px; 
+  display: inline-block; 
+  margin: -20px; 
+}
+
+
+/* aca te lo encerre porque me cagaba todo a mi este al tener la ubicacion iframe */
+#videoYoutube{
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color:#916953;
+    width: 90%;
+    height: 100%;
+}
+
+/* .video{
+  width: max-content;
+  height: max-content;
+} 
+  fijate que onda esto
+  */

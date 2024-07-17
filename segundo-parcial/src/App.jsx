@@ -1,18 +1,27 @@
 //import { useState } from 'react'
 import './App.css'
 import CuadroTexto from './componentes/CuadroTexto'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './componentes/Header'
 import Video from './componentes/VideoYt'
-import Footer from './componentes/Footer'
 import MainContent from './componentes/MainContent'
-import Menu from './componentes/Menu'
+import Footer from './componentes/Footer'
+import Menu from './Paginas/Menu'
+import Contacto from './Paginas/Contacto';
 function App() {
   
 
   return (
     <>
-      <Header />
-      <CuadroTexto 
+      <Router>
+        <Header />
+          <Routes>
+            <Route path='/contacto' element={<Contacto />}></Route>
+            <Route path='/menu' element={<Menu />}></Route>
+          </Routes>
+      </Router>
+
+      <CuadroTexto
         titulo="Quienes somos"
         texto="Ubicada en el corazón del bullicioso centro urbano, El Rincón del Aroma es más que una simple cafetería; 
                 es un oasis acogedor donde los clientes pueden disfrutar de una amplia variedad de bebidas calientes, refrigerios frescos y deliciosos postres, 
@@ -23,7 +32,7 @@ function App() {
                 o simplemente para relajarse con un buen libro.
                 "
       />
-      <CuadroTexto 
+      <CuadroTexto  
         titulo="Historia"
         texto = "Hace más de una década, en el centro de la ciudad, una pequeña cafetería abrió sus puertas bajo el nombre de El Rincón del Aroma. Lo que muchos no saben es que esta acogedora cafetería fue creada por la abuela Tola, 
         una mujer apasionada por el café. Desde entonces, El Rincón del Aroma se ha convertido en un punto de encuentro popular, 
@@ -31,8 +40,7 @@ function App() {
         />
         <MainContent />
         <Video />
-        <Footer />
-        <Menu/>
+      <Footer />
     </>
   )
 }

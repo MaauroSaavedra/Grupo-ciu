@@ -1,3 +1,6 @@
+import React from "react"
+import { Link } from "react-router-dom";
+
 export default function Header(){
     return(
     <>
@@ -6,15 +9,14 @@ export default function Header(){
                 <h1>El Rincón del Aroma</h1>
                 <nav>
                     <ul className="main-ul">
-                        <li class="liMenu"><a href="./menu.html">Menu</a></li>
-                        <li class="liMenu"><a href="./contacto.html">Contacto</a></li>
-                        <li class="liMenu"><a href="#ubicacion">Ubicacion</a></li>
+                        <li><Link to="/">Inicio</Link></li>
+                        <li><Link to="/menu">Menu</Link></li>
+                        <li><Link to="/contacto" >Contacto</Link></li>                    
                     </ul>
                 </nav>
             </div>  
             <img className="imagenBloque" src="https://cdn-icons-png.flaticon.com/512/1114/1114350.png" alt="" /> 
         </header>
-    
     </>
     )
 }

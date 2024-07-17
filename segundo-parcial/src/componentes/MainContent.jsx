@@ -9,7 +9,7 @@ export default function MainContent(){
         paddingBottom : '2%',
         textAlign: 'center',
         fontSize: '300%'
-    }
+    } 
     
     return(
     <> 
