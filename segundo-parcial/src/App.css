@@ -104,10 +104,11 @@ h2{
 
 #menu{
   background-color: #916953;
+  padding: 1em 0;
 }
 
 #menu-box{
-  margin: 2em 4em;
+  margin: 2em 0em;
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -188,3 +189,5 @@ table{
   font-family: 'Courier New', Courier, monospace;
   margin-left: 45%;
 }
+
+
