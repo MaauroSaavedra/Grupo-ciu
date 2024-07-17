@@ -2,14 +2,17 @@ export default function Header(){
     return(
     <>
         <header>
-            <h1>El Rincón del Aroma</h1>
-            <nav>
-                <ul className="main-ul">
-                    <li><a href="./menu.html">Menu</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                    <li><a href="#ubicacion">Ubicacion</a></li>
-                </ul>
-            </nav>
+            <div className="headerBloque">
+                <h1>El Rincón del Aroma</h1>
+                <nav>
+                    <ul className="main-ul">
+                        <li><a href="./menu.html">Menu</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="#ubicacion">Ubicacion</a></li>
+                    </ul>
+                </nav>
+            </div>  
+            <img className="imagenBloque" src="https://cdn-icons-png.flaticon.com/512/1114/1114350.png" alt="" /> 
         </header>
     
     </>

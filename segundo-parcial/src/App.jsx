@@ -2,6 +2,9 @@
 import './App.css'
 import CuadroTexto from './componentes/CuadroTexto'
 import Header from './componentes/Header'
+import Footer from './componentes/Footer'
+import MainContent from './componentes/MainContent'
+
 
 function App() {
   
@@ -28,7 +31,9 @@ function App() {
         una mujer apasionada por el café. Desde entonces, El Rincón del Aroma se ha convertido en un punto de encuentro popular, 
         donde la gente puede disfrutar de buena compañía y deliciosas bebidas en un ambiente acogedor y familiar."
         
-        />  
+        /> 
+        <MainContent />
+        <Footer />
     </>
   )
 }
