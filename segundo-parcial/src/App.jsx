@@ -2,7 +2,7 @@
 import './App.css'
 import CuadroTexto from './componentes/CuadroTexto'
 import Header from './componentes/Header'
-
+import Video from './componentes/VideoYt'
 function App() {
   
 
@@ -23,12 +23,12 @@ function App() {
 
       <CuadroTexto 
         titulo="Historia"
-        texto = "Hace más de una década, en el centro de la ciudad, una pequeña cafetería abrió sus puertas bajo el nombre de 
-        El Rincón del Aroma. Lo que muchos no saben es que esta acogedora cafetería fue creada por la abuela Tola, 
+        texto = "Hace más de una década, en el centro de la ciudad, una pequeña cafetería abrió sus puertas bajo el nombre de El Rincón del Aroma. Lo que muchos no saben es que esta acogedora cafetería fue creada por la abuela Tola, 
         una mujer apasionada por el café. Desde entonces, El Rincón del Aroma se ha convertido en un punto de encuentro popular, 
         donde la gente puede disfrutar de buena compañía y deliciosas bebidas en un ambiente acogedor y familiar."
         
-        />  
+        />
+        <Video />
     </>
   )
 }

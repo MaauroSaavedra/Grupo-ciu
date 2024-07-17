@@ -194,3 +194,18 @@ table{
   font-family: 'Courier New', Courier, monospace;
   margin-left: 45%;
 }
+p{
+  width: 90%;
+  margin: auto;
+}
+h3{
+  width: 90%;
+  margin: auto;
+}
+#video{
+  width: 90%;
+  margin: auto;
+}
+iframe{
+  width: 100%;
+}
