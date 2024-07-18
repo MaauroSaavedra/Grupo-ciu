@@ -222,8 +222,7 @@ h3{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background-color: #916953;
   font-size: 20px;
-  display: inline-block; 
-  float: right;
+  display: inline-block;
   height: 100%;
 }
 
@@ -252,9 +251,7 @@ h3{
 }
 .flex-container > section {
   background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
+  font-size: 30%;
 }
 .box01{
   width: 90%;
@@ -289,6 +286,35 @@ h3{
   background-color:#2A2B2A;
   border-radius: 20px;
 }
-#nosotros{
-  background-color: #2A2B2A;
+#ubicacion{
+  width: 50%;
+  background-color:#916953;
+  float: left;
+}
+.flex-container-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.letras{
+  background-color: #f1f1f1;
+  padding: 12px;
+}
+#informacionLugar{
+  width: 90%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+}
+#tabla{
+  background-color: #916953;
+  padding: 20px 0px;
+  border-radius: 20px;
+}
+#cafeteria{
+  background-color: #916953;
+  padding: 10px;
+  margin-left: 20px;
+
 }
