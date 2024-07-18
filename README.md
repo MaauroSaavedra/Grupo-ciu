@@ -6,4 +6,4 @@ Segundo parcial de CIU
 + Saavedra Mauro
 + Diaz Gonzalo
 + Britez Juan Manuel
-+ Marinossi Franco 
++ Marinozzi Franco 
