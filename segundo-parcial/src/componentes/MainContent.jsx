@@ -50,7 +50,7 @@ export default function MainContent(){
 
        <div className="imagenTextoSectores">
        <img className="imagenesSectores" src="https://i.pinimg.com/736x/bd/c5/98/bdc59891766c56118179ec0c1cac1a77.jpg" alt="Sector Infantil" />
-       <div className="textoSectores">
+       <div className="textoSectores" >
        <p style={estiloP}><u>Sector Infantil</u></p>
             <p>Nuestro sector infantil está especialmente diseñado para que las familias con niños pequeños puedan disfrutar de un momento de relax mientras sus hijos se divierten de manera segura. Este espacio cuenta con una variedad de juegos interactivos, libros y actividades creativas que mantendrán a los más pequeños entretenidos.</p>
         

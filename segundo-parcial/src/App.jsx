@@ -8,6 +8,7 @@ import MainContent from './componentes/MainContent'
 import Footer from './componentes/Footer'
 import Menu from './Paginas/Menu'
 import Contacto from './Paginas/Contacto';
+import Galeria from './componentes/Galeria';
 function App() {
   
 
@@ -21,7 +22,7 @@ function App() {
           </Routes>
       </Router>
 
-      <div class="flex-container"><div class="box01">
+      <div className="flex-container"><div className="box01">
       <CuadroTexto 
         titulo="Quienes somos"
         texto="Ubicada en el corazón del bullicioso centro urbano, El Rincón del Aroma es más que una simple cafetería; 
@@ -33,7 +34,7 @@ function App() {
                 o simplemente para relajarse con un buen libro.
                 "
       /></div>
-      <div class="box02">
+      <div className="box02">
       <CuadroTexto 
         titulo="Historia"
         texto = "Hace más de una década, en el centro de la ciudad, una pequeña cafetería abrió sus puertas bajo el nombre de El Rincón del Aroma. Lo que muchos no saben es que esta acogedora cafetería fue creada por la abuela Tola, 
@@ -43,6 +44,7 @@ function App() {
         </div>
         <MainContent />
         <Video />
+        <Galeria />
       <Footer />
     </>
   )

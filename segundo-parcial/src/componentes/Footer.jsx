@@ -5,7 +5,7 @@ export default function Footer(){
               <p>Diaz Gonzalo</p>
               <p>Britez Juan Manuel</p>
               <p>Saavedra Mauro</p>
-              <p>Marinossi Franco</p>
+              <p>Marinozzi Franco</p>
         </footer>
     
     </>
