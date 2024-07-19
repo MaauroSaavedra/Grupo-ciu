@@ -2,30 +2,30 @@ import React from "react";
 
 const estiloLogo = {
   height: '50px',
-  width: 'auto', // Para mantener la proporción
-  margin: 'auto' // Centra horizontalmente
+  width: 'auto', 
+  margin: 'auto' 
 };
 
 const estiloMapa = {
   border : '0',
   borderRadius : '10px',
   margin: '10px',
-  width: '100%', // Para ocupar el ancho completo del contenedor
-  maxWidth: '100%' // Ajuste para que sea responsive
+  width: '100%', 
+  maxWidth: '100%'
 };
 
 const estiloBotonA = {
-  width: '100%', // Ancho completo
-  height: '50px', // Altura fija
+  width: '100%', 
+  height: '50px', 
   backgroundColor: 'bisque',
-  marginTop: '10px' // Espacio superior
+  marginTop: '10px'
 };
 
 const estiloConsulta = {
-  width: '100%', // Ancho completo
-  height: '100px', // Altura fija
+  width: '100%', 
+  height: '100px', 
   backgroundColor: 'bisque',
-  margin: '10px 0' // Espacio vertical
+  margin: '10px 0' 
 };
 
 const Contacto = () => {
