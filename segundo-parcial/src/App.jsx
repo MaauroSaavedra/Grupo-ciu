@@ -19,6 +19,7 @@ function App() {
           <Routes>
             <Route path='/contacto' element={<Contacto />}></Route>
             <Route path='/menu' element={<Menu />}></Route>
+            <Route path='/galeria' element={<Galeria/>}></Route>
           </Routes>
       </Router>
 
@@ -44,7 +45,6 @@ function App() {
         </div>
         <MainContent />
         <Video />
-        <Galeria />
       <Footer />
     </>
   )

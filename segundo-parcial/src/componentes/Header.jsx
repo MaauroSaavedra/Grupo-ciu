@@ -12,7 +12,8 @@ export default function Header(){
                     <ul className="main-ul">
                         <li className="etiquetas"><Link to="/">Inicio</Link></li>
                         <li className="etiquetas"><Link to="/menu">Menu</Link></li>
-                        <li className="etiquetas"><Link to="/contacto" >Contacto</Link></li>                    
+                        <li className="etiquetas"><Link to="/contacto" >Contacto</Link></li> 
+                        <li className="etiquetas"><Link to="/galeria" >Galeria</Link></li>                   
                     </ul>
                 </nav>
                 </div>
