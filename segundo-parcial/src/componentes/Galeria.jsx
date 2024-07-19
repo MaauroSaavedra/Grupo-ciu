@@ -16,7 +16,7 @@ function Galeria(){
     },[]);
 
     return (
-        <div className="imagenBloque">
+        <div className="flex-containter" id='galeria'>
             <h2 id='galeria-titulo'>Galeria</h2>
             <ul className="galeria-ul">
                 {coffees.map((coffee) => (

@@ -201,7 +201,7 @@ h3{
 .textoSectores {
   background-color: #916953;
   color: bisque;
-  max-width: 80%;
+  width: 90%;
   padding-top: 2%;
   padding-left: 2%;
 }
@@ -249,6 +249,7 @@ h3{
     width: 90%;
     height: 100%;
 }
+
 .flex-container{
   display: flex;
   align-items: flex-start;
@@ -277,25 +278,44 @@ h3{
   align-items: center;
   
 }
-.imagenBloque{
-  width: 10%;
-  padding: 10px;
-  
+.tit {
+  margin: 0; /* Elimina el margen del h1 */
+  font-size: 2rem; /* Tamaño de fuente del título */
 }
-.tit{
-  width: 100%;
-  height: max-content;
-  font-size:xx-large;
-  margin: auto;
+
+.main-ul {
+  list-style-type: none; /* Quita los estilos de lista */
+  padding: 0; /* Elimina el relleno de la lista */
+  margin: 0; /* Elimina el margen de la lista */
+}
+
+.main-ul li {
+  display: inline-block; /* Elementos de lista en línea */
+  margin-right: 20px; /* Espacio entre elementos de lista */
+}
+
+.main-ul li:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+.imagenBloque {
+  width: 100px; /* Ancho de la imagen */
+  height: auto; /* Altura automática */
 }
 .etiquetas:hover{
   background-color:#2A2B2A;
   border-radius: 20px;
 }
 #ubicacion{
-  width: 50%;
+  width: 100%;
   background-color:#916953;
   float: left;
+  margin-top: 2px;
+  margin-bottom: 20px;
+}
+#direccion{
+  width:40%;
+  height: 80%;
 }
 .flex-container-center{
   display: flex;
@@ -303,10 +323,7 @@ h3{
   justify-content: center;
   
 }
-.letras{
-  background-color: #916953;
-  padding: 12px;
-}
+
 #informacionLugar{
   width: 90%;
   padding: 20px;
@@ -319,25 +336,29 @@ h3{
   border-radius: 25px;
 }
 #cafeteria{
-  background-color: #916953;
-  padding: 10px;
   margin-left: 20px;
 
 }
-
+#articulo-ul{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr); /* 4 columnas por fila */
+  gap: 20px;
+}
 .galeria-ul {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(7, 1fr); /* 4 columnas por fila */
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas por fila */
   gap: 20px;
 }
 
 .cafe-img {
-  width: 100%; /* Opcionalmente, puedes ajustar esto según el diseño deseado */
-  height: 200px; /* Altura fija para todas las imágenes */
-  object-fit: cover; /* Ajusta el tamaño de la imagen manteniendo la proporción y cubriendo el contenedor */
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover;
 }
-
+#galeria{
+  width: 95%;
+}
 .galeria-li {
   background: #916953;
   padding: 10px;
@@ -357,3 +378,22 @@ h3{
   text-align: center;
   margin-bottom: 10px;
 }
+@media (max-width: 992px) {
+  .galeria-ul {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas por fila en pantallas medianas */
+  }
+  #articulo-ul{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 576px) {
+  .galeria-ul {
+    grid-template-columns: repeat(1, 1fr); /* 1 columna por fila en pantallas pequeñas */
+  }
+  #articulo-ul{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
