@@ -17,11 +17,11 @@ function Galeria(){
 
     return (
         <div className="imagenBloque">
-            <h2>Galeria</h2>
+            <h2 id='galeria-titulo'>Galeria</h2>
             <ul className="galeria-ul">
                 {coffees.map((coffee) => (
-                    <li key={coffee.id}>
-                        <h3>{coffee.title}</h3>
+                    <li className="galeria-li" key={coffee.id}>
+                        <h3 className='item-title'>{coffee.title}</h3>
                         <img className='cafe-img' src={coffee.image} alt={coffee.title} />
                     </li>
                 ))}

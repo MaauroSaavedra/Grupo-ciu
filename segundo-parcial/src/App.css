@@ -338,7 +338,7 @@ h3{
   object-fit: cover; /* Ajusta el tamaño de la imagen manteniendo la proporción y cubriendo el contenedor */
 }
 
-li {
+.galeria-li {
   background: #916953;
   padding: 10px;
   border-radius: 5px;
@@ -348,12 +348,12 @@ li {
   align-items: center;
 }
 
-h2 {
+#galeria-titulo {
   text-align: center;
   margin-bottom: 20px;
 }
 
-h3 {
+.item-title {
   text-align: center;
   margin-bottom: 10px;
 }
