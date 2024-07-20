@@ -23,11 +23,10 @@ nav{
   font-family: 'Courier New', Courier, monospace;
 }
 
-
-
 .main-ul{
   display: inline-block;
   text-align: center;
+  margin-left: -35%;
 }
 
 .main-ul li{
@@ -92,47 +91,12 @@ h2{
   font-family: 'Courier New', Courier, monospace;
 }
 
-.h3-menu{
-  text-align: left;
-}
 
 .cafe-img{
   width: 350px;
   height: 350px;
 }
 
-
-#ul-menu{
-  border: #2A2B2A solid;
-  background-color: #FFF1D0;
-  border-radius: 8px;
-  margin: 0 6em;
-  padding-bottom: 1em;
-}
-
-#ul-menu ul li{
-  line-height:300%
-}
-
-ol{
-  line-height:400%  
-}
-
-.menu-title{
-  font-size: 28px;
-  font-weight: 500;
-}
-
-.menu-item{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 6em;
-}
-
-span{
-  font-weight: bold;
-}
 
 h4{
   font-family: 'Courier New', Courier, monospace;
@@ -171,12 +135,12 @@ footer p{
 .imagenTextoSectores{
   display: flex;
   margin: 2% 1%;
-  height: 480px;
+  height: 500px;
 }
 
 .imagenesSectores {
   width: 550px;
-  height: 480px;
+  height: 500px;
 }
 
 
@@ -230,6 +194,7 @@ h3{
   font-size: 20px;
   display: inline-block;
   height: 100%;
+  width: 1002px;
 }
 
 #ubicacion{
@@ -238,7 +203,9 @@ h3{
   font-family: monospace;
   border-radius: 16px; 
   display: inline-block; 
-  margin: -20px; 
+  width: 100%;
+  height: 550px;
+  background-color:#916953;
 }
 
 #videoYoutube{
@@ -250,13 +217,21 @@ h3{
     height: 100%;
 }
 
-.flex-container{
+.contenedo{
   display: flex;
   align-items: flex-start;
   justify-content:space-between;
-  
 }
-.flex-container > section {
+
+.contenedoo{
+  display: flex;
+  align-items: flex-start;
+  justify-content:space-between;
+  margin: 2%;
+}
+
+
+.contenedo > section {
   background-color: #f1f1f1;
   font-size: 30%;
 }
@@ -302,6 +277,12 @@ h3{
   width: 100px; 
   height: auto; 
 }
+
+.tit{
+  height: max-content;
+  font-size:300%;
+  margin: auto;
+}
 .etiquetas:hover{
   background-color:#2A2B2A;
   border-radius: 20px;
@@ -316,6 +297,7 @@ h3{
 #direccion{
   width:40%;
   height: 80%;
+  
 }
 .flex-container-center{
   display: flex;
@@ -330,10 +312,18 @@ h3{
   border-radius: 25px;
   background-color: #916953;
 }
+
+.letras{
+  background-color: #916953;
+  padding: 12px;
+}
+
 #tabla{
   background-color: #916953;
   padding: 20px 0px;
   border-radius: 25px;
+  height: max-content;
+  width: max-content;
 }
 #cafeteria{
   margin-left: 20px;
@@ -348,6 +338,7 @@ h3{
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas por fila */
   gap: 20px;
 }
 
@@ -356,20 +347,23 @@ h3{
   height: 200px; 
   object-fit: cover;
 }
+
 #galeria{
   width: 95%;
 }
-.galeria-li {
+
+#listaGaleria {
   background: #916953;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: max-content;
 }
 
-#galeria-titulo {
+#tituloGaleria {
   text-align: center;
   margin-bottom: 20px;
 }
@@ -396,4 +390,85 @@ h3{
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+#tituloCofee {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+.menuu-item {
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  width: 100%;
+  transition: transform 0.2s;
+}
+
+#cantidad{
+  position: absolute;
+  right: 0;
+  margin-top: 5%;
+  font-size: 125%;
+
+}
+
+#nombreCafeteria{
+  color: black;
+  text-align: center;
+  flex: 1;
+
+}
+
+#cuadradoCantidad{
+  background-color: #916953;
+  width: 20%;
+  border-radius: 4px;
+  
+}
+
+#nombreMenu{
+  text-align: left;
+  font-size: 150%;
+  margin: 0px;
+  margin-top: 5%;  
+  font-family: 'Courier New', Courier, monospace; 
+}
+
+#menuCompleto{
+   border: #2A2B2A solid;
+  background-color: #FFF1D0;
+  border-radius: 8px;
+  margin: 0 6em;
+  padding-bottom: 1em;
+}
+
+#descripcionMenu{
+  font-family: 'Courier New', Courier, monospace;
+  line-height:300%;
+  margin-left: 0%;
+}
+
+#botonPrecio {
+  color: black;
+  background-color: #916953;
+  height: 50px;
+  margin-left: 40%;
+  font-size:100%;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 7%;
+}
+
+#precioTotal{
+  margin-left: 46%;
+  font-size: 100%;  
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.menuu-item p {
+  font-size: 1em;
+  margin-bottom: 8px;
+}
+
+
 

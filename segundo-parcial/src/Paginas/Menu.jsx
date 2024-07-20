@@ -1,189 +1,72 @@
-import React from "react"
+import React, {useState} from "react"
 
 const Menu = () => {
+
+    const menuCafeteria = [
+        { id: 1, nombre: 'Espreso', precio: 200.0, descripcion: 'Café concentrado y fuerte preparado forzando agua caliente a través de granos de café finamente molidos.' },
+        { id: 2, nombre: 'Americano', precio: 250.0, descripcion: 'Café expreso diluido con agua caliente, lo que le da un sabor más suave' },
+        { id: 3, nombre: 'Capuchino', precio: 400.0, descripcion: 'Café expreso con partes iguales de espuma de leche y leche vaporizada' },
+        { id: 4, nombre: 'Mocca', precio: 430.0, descripcion: 'Café expreso mezclado con chocolate caliente y leche, cubierto con espuma de leche' },
+        { id: 5, nombre: 'Latte Vainilla', precio: 500.0, descripcion: 'Café expreso con mucha leche vaporizada y un toque de jarabe de vainilla' },
+        { id: 6, nombre: 'Caramel Macchiato', precio: 600.0, descripcion: 'Café expreso con leche vaporizada, un toque de vainilla y cubierto con un chorrito de caramelo' },
+        { id: 7, nombre: 'Iced Coffee', precio: 650.0, descripcion: 'Café servido frío, generalmente con hielo y a veces con leche o crema' },
+        { id: 8, nombre: 'Iced Mocha', precio: 650.0, descripcion: 'Café servido frío, generalmente con hielo y a veces con leche o crema' },
+        { id: 9, nombre: 'Limonada Casera', precio: 800.0, descripcion: 'Bebida refrescante hecha con jugo de limón fresco, agua y azúcar' },
+        { id: 10, nombre: 'Té Helado de Durazno', precio: 400.0, descripcion: 'Té helado con sabor a durazno, a menudo endulzado' },
+        { id: 11, nombre: 'Croissants', precio: 800.0, descripcion: 'Pasteles franceses en forma de media luna, hechos con masa de hojaldre' },
+        { id: 12, nombre: 'Muffins', precio: 600.0, descripcion: 'Pequeños pasteles esponjosos que pueden ser de varios sabores, como arándanos o chocolate' },
+        { id: 13, nombre: 'Brownies', precio: 500.0, descripcion: 'Postres densos y húmedos de chocolate, a menudo con nueces' },
+        { id: 14, nombre: 'Chocotorta', precio: 1100.0, descripcion: 'Postre argentino hecho con capas de galletas de chocolate y mezcla de queso crema y dulce de leche' },
+        { id: 15, nombre: 'Sánguche de Jamon y Queso', precio: 2500.0, descripcion: 'Sándwich clásico con jamón y queso entre dos rebanadas de pan' },
+        { id: 16, nombre: 'Panini de Jamón y Queso', precio: 1800.0, descripcion: 'Versión prensada y caliente del sándwich de jamón y queso, típicamente hecho con pan ciabatta o focaccia' },
+      ];
+    
+      const [producto, setProducto] = useState({1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0,10:0,11:0,12:0,13:0,14:0,15:0,16:0});
+      const [total, setTotal] = useState(0);
+    
+      const actualizar = (id, value) => {
+        setProducto({ ...producto, [id]: parseInt(value) });
+      };
+    
+      const precioTotal = () => {
+        const nuevoPrecio = menuCafeteria.reduce((total, item) => {
+          return total + item.precio * (producto[item.id] || 0);}, 0).toFixed(2);
+        setTotal(nuevoPrecio);
+      };
+
+      let puntosSuspensivos = (valor) => {
+        return '.'.repeat(valor);
+      };
+
     return (
         <article id="menu">
-        <div id="menu-box">
-            <ul id="ul-menu">
-                <h2>Menú</h2>
-                <h3 class="h3-menu">Bebidas Calientes</h3>
-                <ul>
-                    <li class="menu-title">Café Clásico</li>
-                    <ol class="">
-                        <div class="menu-item">
-                            <li>Expreso</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Americano</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Café con Leche</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Cortado</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Capuchino</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Latte</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Mocca</li>
-                            <span>$2000</span>
-                        </div>
-                    </ol>
-                    <li class="menu-title">Cafés Especiales</li>
-                    <ol start="8">
-                        <div class="menu-item">
-                            <li>Latte Vainilla</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Caramel Macchiato</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Mocha Blanco</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Latte Especiado de Calabaza</li>
-                            <span>$2000</span>
-                        </div>
-                    </ol>
-                    <li class="menu-title">Tés y Infusiones</li>
-                    <ol start="12">
-                        <div class="menu-item">
-                            <li>Té Verde</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Té Negro</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Té Chai Latte</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Infusión de Manzanilla</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Infusión de Frutos Rojos</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Matcha Latte</li>
-                            <span>$2000</span>
-                        </div>
-                    </ol>
-                </ul>
-                <h3 class="h3-menu">Bebidas Frías</h3>
-                <ul>
-                    <li class="menu-title">Cafés Helados</li>
-                    <ol>
-                        <div class="menu-item">
-                            <li>Iced Coffee</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Iced Latte</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Iced Mocha</li>
-                            <span>$2000</span>
-                        </div>
-                    </ol>
-                    <li class="menu-title">Bebidas Refrescantes</li>
-                    <ol start="4">
-                        <div class="menu-item">
-                            <li>Limonada Casera</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Té Helado de Durazno</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Agua de Coco</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Smoothies de Frutas</li>
-                            <span>$2000</span>
-                        </div>
-                    </ol>
-                </ul>
-                <h3 class="h3-menu">Pasteles y Postres</h3>
-                <ul>
-                    <li class="menu-title">Recién Horneados</li>
-                    <ol>
-                        <div class="menu-item">
-                            <li>Croissants</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Muffins</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Scones con Mermelada</li>
-                            <span>$2000</span>
-                        </div>
-                    </ol>
-                    <li class="menu-title">Dulces</li>
-                    <ol start="4">
-                        <div class="menu-item">
-                            <li>Brownies</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Chocotorta</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Tarta de Queso</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Pastel de Zanahoria</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Galletitas con Chips de Chocolate</li>
-                            <span>$2000</span>
-                        </div>
-                    </ol>
-                    <li class="menu-title">Sándwiches y Bocadillos</li>
-                    <ol start="9">
-                        <div class="menu-item">
-                            <li>Sánguche de Jamon y Queso</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Panini de Jamón y Queso</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Bagel con Salmón Ahumado y Queso Crema</li>
-                            <span>$2000</span>
-                        </div>
-                        <div class="menu-item">
-                            <li>Tostada de Palta</li>
-                            <span>$2000</span>
-                        </div>
-                    </ol>
-                </ul>
-            </ul>
+            <div id="menuCompleto">
+            <div>
+          <h1 id="nombreCafeteria"><u>Menú de la Cafetería</u></h1>
+          <div className="menuu">
+            {menuCafeteria.map(item => (
+              <div key={item.id} className="menuu-item">
+                <span></span>
+                <h2 id="nombreMenu">{item.id}. {item.nombre}{puntosSuspensivos(50 - item.nombre.length)}Valor: ${item.precio}</h2>
+                <span id="descripcionMenu">{item.descripcion}</span>
+                <label id="cantidad">
+                  Cantidad: 
+                  <input
+                    id="cuadradoCantidad"
+                    type="number"
+                    min="0"
+                    value={producto[item.id]}
+                    onChange={(valor) => actualizar(item.id, valor.target.value)}
+                  />
+                </label>
+              </div>
+            ))}
+          </div>
+          <button  id="botonPrecio" onClick={precioTotal}>
+            Calcular Precio Total
+          </button>
+          <h5 id="precioTotal">Total: ${total}</h5>
+        </div>
         </div>
     </article>
 

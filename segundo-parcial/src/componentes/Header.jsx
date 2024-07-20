@@ -5,15 +5,15 @@ export default function Header(){
     return(
     <>
         <header>
-            <div className="flex-container">
+            <div className="contenedo">
                 <div>
                 <h1 className="tit">El Rincón del Aroma</h1>
                 <nav>
                     <ul className="main-ul">
-                        <li className="etiquetas"><Link to="/">Inicio</Link></li>
+                        <li className="etiquetas"><Link to="/inicio">Inicio</Link></li>
                         <li className="etiquetas"><Link to="/menu">Menu</Link></li>
                         <li className="etiquetas"><Link to="/contacto" >Contacto</Link></li> 
-                        <li className="etiquetas"><Link to="/galeria" >Galeria</Link></li>                   
+                        <li className="etiquetas"><Link to="/galeria" >Galeria</Link></li>                     
                     </ul>
                 </nav>
                 </div>

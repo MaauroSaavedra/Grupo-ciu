@@ -1,4 +1,6 @@
-export default function MainContent(){
+import CuadroTexto from './CuadroTexto'
+
+export default function MainContent(props){
     const estiloImagenes = {
         width: '500px',
         padding: '2%',
@@ -13,6 +15,30 @@ export default function MainContent(){
     
     return(
     <> 
+    
+    <div className="contenedo"><div className="box01">
+      <CuadroTexto 
+        titulo="Quienes somos"
+        texto="Ubicada en el corazón del bullicioso centro urbano, El Rincón del Aroma es más que una simple cafetería; 
+                es un oasis acogedor donde los clientes pueden disfrutar de una amplia variedad de bebidas calientes, refrigerios frescos y deliciosos postres, 
+                todo ello en un ambiente relajado y amigable." 
+
+        texto2="La cafetería está decorada con tonos cálidos y muebles confortables, creando un ambiente acogedor que invita 
+                a los clientes a quedarse y disfrutar de su experiencia. La iluminación suave y la música de fondo crean una atmósfera relajante y propicia para la conversación 
+                o simplemente para relajarse con un buen libro.
+                "
+      /></div>
+      <div className="box02">
+      <CuadroTexto 
+        titulo="Historia"
+        texto = "Hace más de una década, en el centro de la ciudad, una pequeña cafetería abrió sus puertas bajo el nombre de El Rincón del Aroma. Lo que muchos no saben es que esta acogedora cafetería fue creada por la abuela Tola, 
+        una mujer apasionada por el café. Desde entonces, El Rincón del Aroma se ha convertido en un punto de encuentro popular, 
+        donde la gente puede disfrutar de buena compañía y deliciosas bebidas en un ambiente acogedor y familiar.
+        "
+        />
+        </div>
+        </div>   
+
         <div className="imagenTextoSectores">
        <a href="https://www.youtube.com/watch?v=GF3tNrOZ9ww" target="_blank">
        <img className="imagenesSectores" src="https://www.mahesofoodservice.com/blog/wp-content/uploads/2023/09/diseno-de-restaurantes-y-cafeterias.jpg" alt="Sector Interior" /></a> 
@@ -63,6 +89,11 @@ export default function MainContent(){
             </ul>
         </div>
         </div>
+
+        <div class="video">
+                <iframe id="videoYoutube" width="1048" height="600" src="https://www.youtube.com/embed/DiIC4Hw57Zg" title="¿Cómo hacer un café moca?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
         </>
     )
 }

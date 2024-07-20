@@ -1,11 +1,10 @@
 import React from "react";
 
 const estiloLogo = {
-  height: '50px',
-  width: 'auto', 
-  margin: 'auto' 
-};
-
+   height: '70px',
+   padding :'0 100%',
+   margin: 'auto'
+}
 const estiloMapa = {
   border : '0',
   borderRadius : '10px',
@@ -29,8 +28,8 @@ const estiloConsulta = {
 };
 
 const Contacto = () => {
-  return (
-    <article id="articulo-ul">
+    return (
+    <article className="contenedoo">
       <section id="ubicacion">
         <h3>Como llegar</h3>
         <iframe
