@@ -17,7 +17,9 @@ export default function Header(){
                     </ul>
                 </nav>
                 </div>
-                <img className="imagenBloque" src="https://cdn-icons-png.flaticon.com/512/1114/1114350.png" alt="" /> 
+                <Link to="/inicio">
+                    <img className="imagenBloque" src="https://cdn-icons-png.flaticon.com/512/1114/1114350.png" alt="" />
+                    </Link> 
             </div>  
         </header>
     </>

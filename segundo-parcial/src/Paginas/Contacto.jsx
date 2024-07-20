@@ -2,8 +2,7 @@ import React from "react";
 
 const estiloLogo = {
    height: '70px',
-   padding :'0 100%',
-   margin: 'auto'
+   float: 'right'
 }
 const estiloMapa = {
   border : '0',
@@ -14,14 +13,14 @@ const estiloMapa = {
 };
 
 const estiloBotonA = {
-  width: '100%', 
+  width: '30%', 
   height: '50px', 
   backgroundColor: 'bisque',
-  marginTop: '10px'
+  marginBottom:'10px'
 };
 
 const estiloConsulta = {
-  width: '100%', 
+  width: '60%', 
   height: '100px', 
   backgroundColor: 'bisque',
   margin: '10px 0' 
@@ -67,29 +66,28 @@ const Contacto = () => {
             <tr>
               <td>Instagram:</td>
               <td><a id="cafeteria" href="https://www.instagram.com/cafemartinezoficial/">Cafeteria El Aroma</a></td>
-            </tr>
-            <tr>
+            </tr><tr>
               <td>
-                <form>
-                  <label>Consultas:</label>
+                <label>Consultas:</label>
+              </td>
+            </tr>
+            </tbody>
+        </table>
+        <form>
+                  
                   <div className="flex-container-column">
                     <textarea required style={estiloConsulta}></textarea>
                     <button type="submit" style={estiloBotonA}>Enviar</button>
                   </div>
                 </form>
-              </td>
-            </tr>
-            <tr>
-              <td className="flex-container">
+            <div className="flex-container-center">
                 <img
                   style={estiloLogo}
                   src="https://cdn-icons-png.flaticon.com/512/1114/1114350.png"
                   alt="logo de instagram"
                 />
-              </td>
-            </tr>
-          </tbody>
-        </table>
+            </div>
+          
       </div>
     </article>
   );

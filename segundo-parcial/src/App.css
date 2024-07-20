@@ -203,11 +203,18 @@ h3{
   font-family: monospace;
   border-radius: 16px; 
   display: inline-block; 
-  width: 100%;
+  width: 600px;
   height: 550px;
   background-color:#916953;
+  
+  margin-top: 2px;
+  margin-bottom: 20px;
 }
-
+#direccion{
+  width:20%;
+  height: 90%;
+  
+}
 #videoYoutube{
     padding: 20px;
     padding-left: 40px;
@@ -251,7 +258,7 @@ h3{
   justify-items: center;
   flex-direction: column;
   align-items: center;
-  
+  margin: auto;
 }
 .tit {
   margin: 0; 
@@ -287,18 +294,7 @@ h3{
   background-color:#2A2B2A;
   border-radius: 20px;
 }
-#ubicacion{
-  width: 100%;
-  background-color:#916953;
-  float: left;
-  margin-top: 2px;
-  margin-bottom: 20px;
-}
-#direccion{
-  width:40%;
-  height: 80%;
-  
-}
+
 .flex-container-center{
   display: flex;
   align-items: center;
