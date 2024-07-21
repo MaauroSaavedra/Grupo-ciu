@@ -16,7 +16,7 @@ Para que la APP funcione correctamente, se debe correr el comando:
 npm install
 ```
 
-Para ejecutar el programa escriba el siguiente comando
+Para ejecutar la aplicacion escriba el siguiente comando
 
 ```
 npm run dev
