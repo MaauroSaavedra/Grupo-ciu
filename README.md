@@ -6,4 +6,18 @@ Segundo parcial de CIU
 + Saavedra Mauro
 + Diaz Gonzalo
 + Britez Juan Manuel
-+ Marinozzi Franco 
++ Marinozzi Franco
+
+## Instalación y ejecución
+
+Para que la APP funcione correctamente, se debe correr el comando:
+
+```
+npm install
+```
+
+Para ejecutar el programa escriba el siguiente comando
+
+```
+npm run dev
+```
