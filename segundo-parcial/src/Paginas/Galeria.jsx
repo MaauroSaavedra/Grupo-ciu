@@ -11,7 +11,10 @@ function Galeria(){
                 return response.json();
             })
             .then((data) => {
-                setCoffees(data);
+                const filtrarCafes = data.filter((coffee) => 
+                    coffee.title && coffee.title !== "test 1"
+                );
+                setCoffees(filtrarCafes);
             })
     },[]);
 
